@@ -5,6 +5,9 @@ canvas{
 body{
     margin: 0;
     background-color: #111;
+    font-family: 'Comic Sans MS';
+    color: #eee;
+    padding-top: 4em;
 }
 
 menu{
@@ -12,12 +15,62 @@ menu{
     top: 0;
     width: 100%;
     background-color: #111;
-    color: #eee;
     font-size: 3em;
-    padding-left: 6.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-top: 0%;
+    text-align: center;
+    z-index: 3;
 }
 
 canvas{
     position: fixed;
+    z-index: -2;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #eee;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #f2a;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #d08;
+    text-decoration: none;
+  }
+
+overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+name{
+    text-align: right;
+    margin-top: 50%;
+    width: 100%;
+    color: #eee;
+    z-index: 4;
+    font-size: 10em;
+    
+}
+
+about{
+    font-size: large;
 }

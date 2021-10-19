@@ -7,7 +7,7 @@ var context, controller, user, loop;
 context = document.querySelector("canvas").getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight*0.95;
+canvas.height = window.innerHeight*0.99;
 
 window.addEventListener('resize',function(event){
     canvas.width = window.innerWidth-5;
@@ -104,7 +104,7 @@ function Circle(x, y, dx, dy, radius, hue, colourInc){
 }
 
 var circleArray = [];
-var circleCount = 42;
+var circleCount = Math.floor((canvas.width + canvas.height)/42);
 
 for (i=0; i<circleCount; i++){
     var radius = (Math.random()*70)+10;
