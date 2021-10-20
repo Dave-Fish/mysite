@@ -16,7 +16,7 @@ menu{
     left: 0;
     width: 100%;
     background-color: #111;
-    font-size: 3em;
+    font-size: 3vmax;
     margin-top: 0%;
     text-align: center;
     z-index: 3;
@@ -68,7 +68,6 @@ name{
     color: #eee;
     z-index: 4;
     font-size: 10vmax;
-    
 }
 
 about{
