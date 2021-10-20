@@ -94,6 +94,13 @@ function Circle(x, y, dx, dy, radius, hue, colourInc){
                 if (this.radius < maxRadius){
                     this.radius+=1;
                 }
+
+                if (hue>323 && this.colourInc>0){
+                    this.colourInc = -this.colourInc;
+                }
+                if (hue<323 && this.colourInc<0){
+                    this.colourInc = -this.colourInc;
+                }
                 
         } else if (this.radius > this.minRadius){
             this.radius-=1;
